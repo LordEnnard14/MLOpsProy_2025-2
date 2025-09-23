@@ -1,0 +1,9 @@
+stages:
+  preprocess:
+    cmd: python src/features.py --infile data/raw/Telco-Customer-Churn.csv 
+      --outfile data/processed/telco_clean.csv
+    deps:
+    - data/raw/Telco-Customer-Churn.csv
+    - src/features.py
+    outs:
+    - data/processed/telco_clean.csv
