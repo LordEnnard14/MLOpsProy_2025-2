@@ -7,3 +7,12 @@ stages:
     - src/features.py
     outs:
     - data/processed/telco_clean.csv
+  train:
+    cmd: python src/train.py --data data/processed/telco_clean.csv --out 
+      artifacts
+    deps:
+    - data/processed/telco_clean.csv
+    - src/train.py
+    outs:
+    - artifacts/metrics.json
+    - artifacts/model.pkl
