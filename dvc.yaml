@@ -16,3 +16,4 @@ stages:
     outs:
     - artifacts/metrics.json
     - artifacts/model.pkl
+
