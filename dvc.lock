@@ -10,8 +10,8 @@ stages:
       size: 977501
     - path: src/features.py
       hash: md5
-      md5: b35d654d63c9d81e7d09b7ff40158856
-      size: 1601
+      md5: 58efd836e420e1072910d5b640afb8dd
+      size: 1594
     outs:
     - path: data/processed/telco_clean.csv
       hash: md5
@@ -27,8 +27,8 @@ stages:
       size: 890933
     - path: src/train.py
       hash: md5
-      md5: c4074c2c5e38d47b40ea338a92e7af1a
-      size: 4117
+      md5: ff2cc66d67b4151f68c8c207438fa9c4
+      size: 4105
     outs:
     - path: artifacts/metrics.json
       hash: md5

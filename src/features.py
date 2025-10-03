@@ -38,5 +38,5 @@ if __name__ == "__main__":
     ap.add_argument("--infile", default="data/raw/Telco-Customer-Churn.csv")
     ap.add_argument("--outfile", default="data/processed/telco_clean.csv")
     args = ap.parse_args()
-    print("Cambio de prueba")
+    print("HOLAAAAAA")
     main(args.infile, args.outfile)
