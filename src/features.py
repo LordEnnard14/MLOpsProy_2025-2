@@ -38,5 +38,9 @@ if __name__ == "__main__":
     ap.add_argument("--infile", default="data/raw/Telco-Customer-Churn.csv")
     ap.add_argument("--outfile", default="data/processed/telco_clean.csv")
     args = ap.parse_args()
+<<<<<<< HEAD
     print("Un cambio en featuressss.py")
+=======
+    print("HOLAAAAAA")
+>>>>>>> develop
     main(args.infile, args.outfile)

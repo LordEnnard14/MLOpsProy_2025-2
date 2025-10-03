@@ -168,6 +168,35 @@ http://127.0.0.1:8000/docs
 ```
 
 ---
+🌱 Ejemplo de flujo
+# Cambiar a develop
+git checkout develop
+
+# Hacer cambios en features.py o train.py
+nano src/features.py
+
+# Ejecutar pipeline y actualizar artefactos
+dvc repro
+
+# Preparar commit
+git add src/features.py src/train.py dvc.yaml dvc.lock
+git commit -m "feat: actualización de preprocesamiento y entrenamiento"
+git push origin develop
+
+
+Mostrar resultados en MLflow UI y probar el servicio en FastAPI.
+
+Cuando la versión es estable:
+
+# Pasar a rama main
+git checkout main
+
+# Fusionar cambios desde develop
+git merge develop
+
+# Subir cambios estables
+git push origin main
+
 
 ## ✅ Criterios de Éxito (Resumen)
 

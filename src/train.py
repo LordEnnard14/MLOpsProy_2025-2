@@ -107,5 +107,9 @@ if __name__ == "__main__":
     ap.add_argument("--data", default="data/processed/telco_clean.csv")
     ap.add_argument("--out", default="artifacts")
     args = ap.parse_args()
+<<<<<<< HEAD
     print("Un cambio en trainnnnn.py")
+=======
+    print("HOLAAAAAA")
+>>>>>>> develop
     main(args.data, args.out)
